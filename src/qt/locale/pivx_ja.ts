@@ -272,6 +272,6 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>dorin-core</name>
     </context>
 </TS>

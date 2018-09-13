@@ -1,19 +1,19 @@
 [Unit]
-Description=PIVX's distributed currency daemon
+Description=Dorin's distributed currency daemon
 After=network.target
 
 [Service]
-User=pivx
-Group=pivx
+User=dorin
+Group=dorin
 
 Type=forking
-PIDFile=/var/lib/pivxd/pivxd.pid
+PIDFile=/var/lib/dorind/dorind.pid
 
-ExecStart=/usr/bin/pivxd -daemon -pid=/var/lib/pivxd/pivxd.pid \
-          -conf=/etc/pivx/pivx.conf -datadir=/var/lib/pivxd
+ExecStart=/usr/bin/dorind -daemon -pid=/var/lib/dorind/dorind.pid \
+          -conf=/etc/dorin/dorin.conf -datadir=/var/lib/dorind
 
-ExecStop=-/usr/bin/pivx-cli -conf=/etc/pivx/pivx.conf \
-         -datadir=/var/lib/pivxd stop
+ExecStop=-/usr/bin/dorin-cli -conf=/etc/dorin/dorin.conf \
+         -datadir=/var/lib/dorind stop
 
 Restart=always
 PrivateTmp=true

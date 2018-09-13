@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  pivxd The PIVX core server.
+#  dorind The Dorin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: pivxd
-# processname: pivxd
+# description: dorind
+# processname: dorind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/pivxd, see below
-if [ -f /etc/sysconfig/pivxd ]; then
-        . /etc/sysconfig/pivxd
+# you can override defaults in /etc/sysconfig/dorind, see below
+if [ -f /etc/sysconfig/dorind ]; then
+        . /etc/sysconfig/dorind
 fi
 
 RETVAL=0
 
-prog=pivxd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/pivxd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/pivxd}
+prog=dorind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/dorind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/dorind}
 
-# pivxd defaults to /usr/bin/pivxd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/pivxd}
+# dorind defaults to /usr/bin/dorind, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/dorind}
 
-# pivxd opts default to -disablewallet, override with BITCOIND_OPTS
+# dorind opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2017-2018 The Dorin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_STAKEINPUT_H
-#define PIVX_STAKEINPUT_H
+#ifndef Dorin_STAKEINPUT_H
+#define Dorin_STAKEINPUT_H
 
 class CKeyStore;
 class CWallet;
@@ -87,4 +87,4 @@ public:
 };
 
 
-#endif //PIVX_STAKEINPUT_H
+#endif //Dorin_STAKEINPUT_H
